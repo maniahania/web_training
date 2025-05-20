@@ -1,0 +1,16 @@
+h1 {
+  color: darkgrey;
+}
+
+li {
+  font-size: 22px;
+}
+
+.game-name {
+  font-weight: bold;
+}
+
+.time {
+  opacity: 0.7;
+  color: black;
+}
