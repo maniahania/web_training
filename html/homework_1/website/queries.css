@@ -1,0 +1,60 @@
+/* SMALL DESKTOP */
+@media (max-width: 84em) {
+  html {
+    font-size: 90%;
+  }
+  .temp-text {
+    line-height: 1.2;
+  }
+}
+
+/* LANDSCAPE TABLET */
+@media (max-width: 75em) {
+  .main-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .side-panel {
+    grid-column: 1/-1;
+  }
+
+  .section-accordion {
+    padding: 1.2rem 2rem 1.2rem 1.2rem;
+  }
+
+  .small-section {
+    padding: 0 3rem;
+  }
+}
+
+/* TABLET */
+@media (max-width: 59em) {
+  html {
+    font-size: 80%;
+  }
+  .small-section {
+    padding: 0 1.2rem;
+  }
+}
+
+/* SMALL TABLET */
+@media (max-width: 44em) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PHONE */
+@media (max-width: 34em) {
+  html {
+    font-size: 70%;
+  }
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer {
+    padding: 2rem 2rem;
+  }
+}

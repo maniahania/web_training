@@ -62,9 +62,8 @@ body {
   font-weight: 500;
   text-align: center;
 }
+
 .accordion {
-  font-size: 16px;
-  width: 100%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -83,7 +82,7 @@ body {
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -105,28 +104,47 @@ body {
 
 .open .hidden-box {
   display: flex;
-  justify-content: stretch;
+  flex-direction: column;
 }
 
-table {
-  margin-top: 1rem;
-  width: 100%;
-  border-collapse: collapse;
+.table {
+  display: inline-block;
+  margin-top: 0.8rem;
 }
 
-td {
-  padding: 1rem;
-  text-align: left;
+.row {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
-tbody:first-child {
+.row:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-tr:hover {
+.row:hover {
   color: #fff;
-  background-color: rgb(250, 44, 147);
+  background-color: rgb(85, 0, 165);
+}
+
+.table-item {
+  padding: 1rem;
+}
+
+.col-1 {
+  width: 8%;
+}
+
+.col-2,
+.col-3,
+.col-5,
+.col-6 {
+  width: 20%;
+}
+
+.col-4 {
+  width: 30%;
 }
 
 /* SIDEPANEL */
