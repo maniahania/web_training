@@ -166,6 +166,10 @@ body {
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer-text {
