@@ -3,6 +3,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
+import { SmallSectionComponent } from './small-section/small-section.component';
+import { SidePanelComponent } from './side-panel/side-panel.component';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
     FooterComponent,
     ProductListComponent,
     ProductFilterComponent,
+    SmallSectionComponent,
+    SidePanelComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
