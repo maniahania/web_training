@@ -1,0 +1,31 @@
+.footer {
+  padding: 3rem 9rem;
+  border-top: 1px solid #eee;
+  background-color: rgb(250, 44, 147);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: rgb(252, 189, 220);
+}
