@@ -1,11 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .container {
-  padding: 8rem 0;
+  padding: 6rem 3rem;
 }
 
 .main-grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 1fr 4fr;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
 }
