@@ -1,0 +1,14 @@
+label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.4rem;
+  width: 100%;
+  max-width: 16rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
