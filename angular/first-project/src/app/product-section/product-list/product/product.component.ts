@@ -5,9 +5,10 @@ import { CurrencyPipe } from '@angular/common';
 @Component({
   selector: 'app-product',
   imports: [CurrencyPipe],
+  standalone: true,
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
 })
 export class ProductComponent {
-  data = input.required<Product>();
+  product = input.required<Product>();
 }

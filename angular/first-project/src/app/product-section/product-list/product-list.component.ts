@@ -2,11 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ProductComponent } from './product/product.component';
 import { Product } from './product.model';
 import { ProductFilterComponent } from '../product-filter/product-filter.component';
-import { ProductService } from '../services/product.service';
+import { ProductService } from '../product-list/product.service';
 
 @Component({
   selector: 'app-product-list',
   imports: [ProductComponent, ProductFilterComponent],
+  standalone: true,
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
 })

@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { SmallSectionComponent } from './small-section/small-section.component';
+import { ProductListComponent } from './product-section/product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     HeaderComponent,
     FooterComponent,
-    ProductListComponent,
     SmallSectionComponent,
+    ProductListComponent,
   ],
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

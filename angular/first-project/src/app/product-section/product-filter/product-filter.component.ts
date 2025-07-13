@@ -3,6 +3,7 @@ import { Component, output } from '@angular/core';
 @Component({
   selector: 'app-product-filter',
   imports: [],
+  standalone: true,
   templateUrl: './product-filter.component.html',
   styleUrl: './product-filter.component.css',
 })
