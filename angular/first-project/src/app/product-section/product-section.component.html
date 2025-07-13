@@ -1,1 +1,6 @@
-<p>product-section works!</p>
+<app-product-filter
+  (minPriceChange)="onMinPriceChange($event)"
+  (maxPriceChange)="onMaxPriceChange($event)"
+/>
+
+<app-product-list [minPrice]="minPrice()" [maxPrice]="maxPrice()" />

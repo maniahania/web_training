@@ -1,8 +1,4 @@
 <div>
-  <app-product-filter
-    (minPriceChange)="onMinPriceChange($event)"
-    (maxPriceChange)="onMaxPriceChange($event)"
-  />
   <ul>
     @for (product of filteredProducts; track product.id){
     <li>
