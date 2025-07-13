@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ProductComponent } from './product/product.component';
 import { Product } from './product.model';
 import { ProductFilterComponent } from '../product-filter/product-filter.component';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-product-list',
@@ -9,16 +10,17 @@ import { ProductFilterComponent } from '../product-filter/product-filter.compone
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
 })
-export class ProductListComponent {
-  private allProducts: Product[] = [
-    { id: '1', name: 'bag', price: 12.0 },
-    { id: '2', name: 'tshirt', price: 25.0 },
-    { id: '3', name: 'jeans', price: 30.0 },
-    { id: '4', name: 'jacket', price: 41.99 },
-  ];
+export class ProductListComponent implements OnInit {
+  private allProducts: Product[] = [];
 
   minPrice = 0;
   maxPrice = Infinity;
+
+  private productService = inject(ProductService);
+
+  ngOnInit(): void {
+    this.allProducts = this.productService.getProducts();
+  }
 
   get filteredProducts(): Product[] {
     return this.allProducts.filter(
