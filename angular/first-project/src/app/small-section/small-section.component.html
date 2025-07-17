@@ -1,6 +1,6 @@
 <section class="small-section">
   <h2 class="heading-secondary">This is just a small navigation panel</h2>
-  @for (item of navItems; track item.id) {
-  <p>{{ item.name }}</p>
-  }
+  <p *ngFor="let item of navItems">
+    {{ item.name }}
+  </p>
 </section>

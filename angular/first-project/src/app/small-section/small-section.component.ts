@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { navItems } from '../../mock-data/nav-data';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-small-section',
-  imports: [],
+  imports: [NgFor],
   standalone: true,
   templateUrl: './small-section.component.html',
   styleUrl: './small-section.component.css',
