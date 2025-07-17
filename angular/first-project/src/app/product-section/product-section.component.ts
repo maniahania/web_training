@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 
@@ -7,6 +7,7 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
   imports: [ProductListComponent, ProductFilterComponent],
   templateUrl: './product-section.component.html',
   styleUrl: './product-section.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductSection {
   minPrice = signal(0);

@@ -1,4 +1,10 @@
-import { Component, inject, input, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  input,
+  OnInit,
+} from '@angular/core';
 import { ProductComponent } from './product/product.component';
 import { Product } from './product.model';
 import { ProductService } from '../product-list/product.service';
@@ -9,6 +15,7 @@ import { ProductService } from '../product-list/product.service';
   standalone: true,
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductListComponent implements OnInit {
   private allProducts: Product[] = [];

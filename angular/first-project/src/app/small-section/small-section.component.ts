@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-small-section',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   standalone: true,
   templateUrl: './small-section.component.html',
   styleUrl: './small-section.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SmallSectionComponent {}

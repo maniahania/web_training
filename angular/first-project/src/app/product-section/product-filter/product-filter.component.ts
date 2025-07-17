@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-product-filter',
@@ -6,6 +6,7 @@ import { Component, output } from '@angular/core';
   standalone: true,
   templateUrl: './product-filter.component.html',
   styleUrl: './product-filter.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductFilterComponent {
   minPriceChange = output<number>();

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Product } from '../product.model';
 import { CurrencyPipe } from '@angular/common';
 
@@ -8,6 +8,7 @@ import { CurrencyPipe } from '@angular/common';
   standalone: true,
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductComponent {
   product = input.required<Product>();
