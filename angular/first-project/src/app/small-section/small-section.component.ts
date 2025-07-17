@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { navItems } from '../../mock-data/nav-data';
 
 @Component({
   selector: 'app-small-section',
@@ -8,4 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './small-section.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SmallSectionComponent {}
+export class SmallSectionComponent {
+  navItems = navItems;
+}

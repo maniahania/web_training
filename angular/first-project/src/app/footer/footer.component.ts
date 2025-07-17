@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { footerLinks, footerPhones } from '../../mock-data/footer-data';
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './footer.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent {}
+export class FooterComponent {
+  phones = footerPhones;
+  links = footerLinks;
+}

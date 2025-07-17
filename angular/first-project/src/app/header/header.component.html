@@ -3,8 +3,9 @@
     <img class="logo" src="logo.png" alt="website logo" />
   </a>
 
-  <select id="select-language" class="select-language">
-    <option value="english">English</option>
-    <option value="polish">Polish</option>
+  <select class="select-language">
+    @for (lang of languages; track lang.id) {
+    <option [value]="lang.value">{{ lang.name }}</option>
+    }
   </select>
 </header>

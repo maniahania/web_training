@@ -1,12 +1,19 @@
 <footer class="footer">
-  <div>
-    <p class="footer-text">Customer service</p>
-    <p class="footer-text">+42 12 345 677</p>
+  <div class="footer-section">
+    <h4 class="footer-heading">Customer service</h4>
+    @for (phone of phones; track $index) {
+    <p class="footer-text">{{ phone }}</p>
+    }
   </div>
-  <div>
+
+  <div class="footer-section">
+    <h4 class="footer-heading">Quick links</h4>
     <ul class="footer-links">
-      <li><a class="footer-link" href="#">Help</a></li>
-      <li><a class="footer-link" href="#">Find more help</a></li>
+      @for (link of links; track $index) {
+      <li>
+        <a class="footer-link" [href]="link.url">{{ link.label }}</a>
+      </li>
+      }
     </ul>
   </div>
 </footer>

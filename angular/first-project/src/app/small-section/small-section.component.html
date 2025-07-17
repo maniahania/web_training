@@ -1,9 +1,6 @@
 <section class="small-section">
   <h2 class="heading-secondary">This is just a small navigation panel</h2>
-  <p>Navigation Item 1</p>
-  <p>Navigation Item 2</p>
-  <p>Navigation Item 3</p>
-  <p>Navigation Item 4</p>
-  <p>Navigation Item 5</p>
-  <p>Navigation Item 6</p>
+  @for (item of navItems; track item.id) {
+  <p>{{ item.name }}</p>
+  }
 </section>

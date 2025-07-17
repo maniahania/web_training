@@ -1,17 +1,28 @@
 .footer {
-  padding: 3rem 9rem;
-  border-top: 1px solid #eee;
-  background-color: rgb(250, 44, 147);
+  padding: 2rem 4vw;
+  border-top: 1px solid #444;
+  background-color: #111;
   display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  color: #fff;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f3f3f3;
 }
 
 .footer-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #fff;
+  color: #ccc;
 }
 
 .footer-links {
@@ -20,12 +31,14 @@
 
 .footer-link:link,
 .footer-link:visited {
+  color: #ccc;
   text-decoration: none;
-  line-height: 1.4;
-  color: #fff;
+  display: inline-block;
+  padding: 0.2rem 0;
+  transition: color 0.2s;
 }
 
-.footer-link:hover,
-.footer-link:active {
-  color: rgb(252, 189, 220);
+.footer-link:active,
+.footer-link:hover {
+  color: #ff82ba;
 }
