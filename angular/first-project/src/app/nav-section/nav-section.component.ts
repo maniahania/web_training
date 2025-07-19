@@ -3,13 +3,13 @@ import { navItems } from '../../mock-data/nav-data';
 import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-small-section',
+  selector: 'app-nav-section',
   imports: [NgFor],
   standalone: true,
-  templateUrl: './small-section.component.html',
-  styleUrl: './small-section.component.css',
+  templateUrl: './nav-section.component.html',
+  styleUrl: './nav-section.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SmallSectionComponent {
+export class NavSectionComponent {
   navItems = navItems;
 }

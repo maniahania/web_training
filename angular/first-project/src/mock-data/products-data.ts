@@ -1,4 +1,4 @@
-import { Product } from '../app/product-section/product-list/product.model';
+import { Product } from '../app/product-section/product.model';
 
 export const products: Product[] = [
   { id: '1', name: 'Bag', price: 12.0 },

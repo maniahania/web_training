@@ -5,9 +5,9 @@ import {
   input,
   OnInit,
 } from '@angular/core';
-import { ProductComponent } from './product/product.component';
-import { Product } from './product.model';
-import { ProductService } from '../product-list/product.service';
+import { ProductComponent } from '../product/product.component';
+import { Product } from '../product.model';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-product-list',

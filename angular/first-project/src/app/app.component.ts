@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SmallSectionComponent } from './small-section/small-section.component';
+import { NavSectionComponent } from './nav-section/nav-section.component';
 import { ProductSection } from './product-section/product-section.component';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductSection } from './product-section/product-section.component';
   imports: [
     HeaderComponent,
     FooterComponent,
-    SmallSectionComponent,
+    NavSectionComponent,
     ProductSection,
   ],
   standalone: true,

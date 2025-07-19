@@ -1,4 +1,4 @@
-import { Language } from '../app/header/language.model';
+import { Language } from '../app/shared/interfaces/language.model';
 
 export const languages: Language[] = [
   { id: '1', name: 'English', value: 'en' },
