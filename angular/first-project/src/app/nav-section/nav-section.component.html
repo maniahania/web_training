@@ -1,6 +1,8 @@
-<section class="small-section">
+<section class="nav-section">
   <h2 class="heading-secondary">This is just a small navigation panel</h2>
-  <p *ngFor="let item of navItems">
-    {{ item.name }}
-  </p>
+  <nav class="nav-links">
+    <a *ngFor="let item of navItems" href="#" class="nav-link">
+      {{ item.name }}
+    </a>
+  </nav>
 </section>

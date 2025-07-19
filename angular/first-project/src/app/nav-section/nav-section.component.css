@@ -1,4 +1,4 @@
-.small-section {
+.nav-section {
   padding: 0 2rem;
 }
 
@@ -6,4 +6,26 @@
   font-weight: 600;
   font-size: 1.5rem;
   padding-bottom: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #4b6163f3;
+  font-weight: 600;
 }
