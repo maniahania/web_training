@@ -16,16 +16,3 @@
   font-size: 1rem;
   border-radius: 9px;
 }
-
-/* MAIN CONTENT */
-.container {
-  padding: 8rem 0;
-}
-
-.main-grid {
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
