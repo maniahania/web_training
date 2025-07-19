@@ -10,8 +10,8 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductSection {
-  minPrice = signal(0);
-  maxPrice = signal(Infinity);
+  readonly minPrice = signal(0);
+  readonly maxPrice = signal(Infinity);
 
   onMinPriceChange(value: number) {
     this.minPrice.set(value);

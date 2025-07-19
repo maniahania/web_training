@@ -11,5 +11,5 @@ import { NgFor } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavSectionComponent {
-  navItems = navItems;
+  readonly navItems = navItems;
 }

@@ -9,8 +9,8 @@ import { ChangeDetectionStrategy, Component, output } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductFilterComponent {
-  minPriceChange = output<number>();
-  maxPriceChange = output<number>();
+  readonly minPriceChange = output<number>();
+  readonly maxPriceChange = output<number>();
 
   onMinChange(event: Event) {
     const input = event.target as HTMLInputElement | null;

@@ -10,5 +10,5 @@ import { languages } from '../../mock-data/languages-data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  languages = languages;
+  readonly languages = languages;
 }

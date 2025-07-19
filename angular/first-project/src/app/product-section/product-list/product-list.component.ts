@@ -18,15 +18,15 @@ import { toSignal } from '@angular/core/rxjs-interop';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductListComponent {
-  private productService = inject(ProductService);
+  private readonly productService = inject(ProductService);
 
-  minPrice = input<number>(0);
-  maxPrice = input<number>(Infinity);
-  allProducts = toSignal(this.productService.getProducts(), {
+  readonly minPrice = input<number>(0);
+  readonly maxPrice = input<number>(Infinity);
+  readonly allProducts = toSignal(this.productService.getProducts(), {
     initialValue: [],
   });
 
-  filteredProducts = computed(() =>
+  readonly filteredProducts = computed(() =>
     this.allProducts().filter(
       (p) => p.price >= this.minPrice() && p.price <= this.maxPrice()
     )

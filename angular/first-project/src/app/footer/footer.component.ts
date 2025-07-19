@@ -10,6 +10,6 @@ import { footerLinks, footerPhones } from '../../mock-data/footer-data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-  phones = footerPhones;
-  links = footerLinks;
+  readonly phones = footerPhones;
+  readonly links = footerLinks;
 }

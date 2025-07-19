@@ -11,5 +11,5 @@ import { CurrencyPipe } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductComponent {
-  product = input.required<Product>();
+  readonly product = input.required<Product>();
 }
