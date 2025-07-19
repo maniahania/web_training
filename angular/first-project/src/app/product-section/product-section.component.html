@@ -3,4 +3,6 @@
   (maxPriceChange)="onMaxPriceChange($event)"
 />
 
-<app-product-list [minPrice]="minPrice()" [maxPrice]="maxPrice()" />
+<app-card>
+  <app-product-list [minPrice]="minPrice()" [maxPrice]="maxPrice()" />
+</app-card>
