@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { footerLinks, footerPhones } from '../../mock-data/footer-data';
+import { FooterLink } from '../shared/interfaces/footer-link.model';
 
 @Component({
   selector: 'app-footer',
@@ -10,6 +11,6 @@ import { footerLinks, footerPhones } from '../../mock-data/footer-data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-  readonly phones = footerPhones;
-  readonly links = footerLinks;
+  readonly phones: string[] = footerPhones;
+  readonly links: FooterLink[] = footerLinks;
 }

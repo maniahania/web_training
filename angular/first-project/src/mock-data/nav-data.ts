@@ -1,4 +1,6 @@
-export const navItems: { id: string; name: string }[] = [
+import { NavItem } from '../app/shared/interfaces/nav-item.model';
+
+export const navItems: NavItem[] = [
   { id: '1', name: 'Navigation Item 1' },
   { id: '2', name: 'Navigation Item 2' },
   { id: '3', name: 'Navigation Item 3' },
