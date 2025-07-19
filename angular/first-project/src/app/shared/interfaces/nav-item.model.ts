@@ -1,4 +1,4 @@
-export interface NavItem {
-  id: string;
+export interface NavItem<T = string> {
+  id: T;
   name: string;
 }
