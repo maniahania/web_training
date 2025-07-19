@@ -1,15 +1,21 @@
 <div class="filter-container">
-  <label for="min-price">Min price</label>
-  <input
-    type="number"
-    id="min-price"
-    (input)="onMinChange($event)"
-  />
+  <div>
+    <label for="min-price">Min. price ($)</label>
+    <input
+      type="number"
+      id="min-price"
+      (input)="onMinChange($event)"
+      placeholder="0.00"
+    />
+  </div>
 
-  <label for="max-price">Max price</label>
-  <input
-    type="number"
-    id="max-price"
-    (input)="onMaxChange($event)"
-  />
+  <div>
+    <label for="max-price">Max. price ($)</label>
+    <input
+      type="number"
+      id="max-price"
+      (input)="onMaxChange($event)"
+      placeholder="1000.00"
+    />
+  </div>
 </div>
