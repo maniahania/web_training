@@ -1,13 +1,13 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  computed,
   inject,
   input,
-  OnInit,
 } from '@angular/core';
 import { ProductComponent } from '../product/product.component';
-import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-product-list',
@@ -17,21 +17,18 @@ import { ProductService } from '../product.service';
   styleUrl: './product-list.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProductListComponent implements OnInit {
-  private allProducts: Product[] = [];
+export class ProductListComponent {
+  private productService = inject(ProductService);
 
   minPrice = input<number>(0);
   maxPrice = input<number>(Infinity);
+  allProducts = toSignal(this.productService.getProducts(), {
+    initialValue: [],
+  });
 
-  private productService = inject(ProductService);
-
-  ngOnInit(): void {
-    this.allProducts = this.productService.getProducts();
-  }
-
-  get filteredProducts(): Product[] {
-    return this.allProducts.filter(
+  filteredProducts = computed(() =>
+    this.allProducts().filter(
       (p) => p.price >= this.minPrice() && p.price <= this.maxPrice()
-    );
-  }
+    )
+  );
 }

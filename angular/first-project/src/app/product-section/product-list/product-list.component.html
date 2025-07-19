@@ -1,5 +1,5 @@
 <ul>
-  @for (product of filteredProducts; track product.id){
+  @for (product of filteredProducts(); track product.id){
   <li>
     <app-product [product]="product" />
   </li>
