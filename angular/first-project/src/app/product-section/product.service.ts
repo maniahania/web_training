@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { products } from '../../mock-data/products-data';
-import { Observable, of } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -9,5 +9,11 @@ import { Observable, of } from 'rxjs';
 export class ProductService {
   getProducts(): Observable<Product[]> {
     return of(products);
+  }
+
+  getProductById(id: string): Observable<Product | undefined> {
+    return of(products).pipe(
+      map((allProducts) => allProducts.find((product) => product.id === id))
+    );
   }
 }

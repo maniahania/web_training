@@ -10,7 +10,7 @@ import { CardComponent } from '../shared/components/card/card.component';
   styleUrl: './product-section.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProductSection {
+export class ProductSectionComponent {
   readonly minPrice = signal(0);
   readonly maxPrice = signal(Infinity);
 

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavSectionComponent } from './nav-section/nav-section.component';
-import { ProductSection } from './product-section/product-section.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { ProductSection } from './product-section/product-section.component';
     HeaderComponent,
     FooterComponent,
     NavSectionComponent,
-    ProductSection,
+    RouterOutlet,
   ],
   standalone: true,
   templateUrl: './app.component.html',
