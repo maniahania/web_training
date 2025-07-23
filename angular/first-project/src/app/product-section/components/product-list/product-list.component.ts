@@ -6,7 +6,7 @@ import {
   input,
 } from '@angular/core';
 import { ProductComponent } from '../product/product.component';
-import { ProductService } from '../product.service';
+import { ProductService } from '../../services/product.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({

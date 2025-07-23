@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { languages } from '../../mock-data/languages-data';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { LanguageService } from '../shared/services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +11,9 @@ import { languages } from '../../mock-data/languages-data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  readonly languages = languages;
+  private readonly languageService = inject(LanguageService);
+
+  readonly languages = toSignal(this.languageService.getLanguages(), {
+    initialValue: [],
+  });
 }

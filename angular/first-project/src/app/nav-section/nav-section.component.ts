@@ -1,16 +1,18 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { navItems } from '../../mock-data/nav-data';
-import { NgFor } from '@angular/common';
-import { NavItem } from '../shared/interfaces/nav-item.model';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { NavDataService } from '../shared/services/nav-data.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-nav-section',
-  imports: [NgFor],
+  imports: [],
   standalone: true,
   templateUrl: './nav-section.component.html',
   styleUrl: './nav-section.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavSectionComponent {
-  readonly navItems: NavItem[] = navItems;
+  private readonly navDataService = inject(NavDataService);
+  readonly navItems = toSignal(this.navDataService.getNavItems(), {
+    initialValue: [],
+  });
 }

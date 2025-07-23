@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer-section">
     <h4 class="footer-heading">Customer service</h4>
-    @for (phone of phones; track $index) {
+    @for (phone of phones(); track $index) {
     <p class="footer-text">{{ phone }}</p>
     }
   </div>
@@ -9,7 +9,7 @@
   <div class="footer-section">
     <h4 class="footer-heading">Quick links</h4>
     <ul class="footer-links">
-      @for (link of links; track $index) {
+      @for (link of links(); track $index) {
       <li>
         <a class="footer-link" [href]="link.url">{{ link.label }}</a>
       </li>

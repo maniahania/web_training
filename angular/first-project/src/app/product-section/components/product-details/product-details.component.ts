@@ -6,9 +6,9 @@ import {
   OnInit,
   signal,
 } from '@angular/core';
-import { ProductService } from '../product.service';
+import { ProductService } from '../../services/product.service';
 import { ActivatedRoute } from '@angular/router';
-import { Product } from '../product.model';
+import { Product } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
 import { switchMap } from 'rxjs';
 

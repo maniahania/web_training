@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductFilterComponent } from './product-filter/product-filter.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductFilterComponent } from './components/product-filter/product-filter.component';
 import { CardComponent } from '../shared/components/card/card.component';
 
 @Component({

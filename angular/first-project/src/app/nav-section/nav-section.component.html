@@ -1,8 +1,8 @@
 <section class="nav-section">
   <h2 class="heading-secondary">This is just a small navigation panel</h2>
   <nav class="nav-links">
-    <a *ngFor="let item of navItems" href="#" class="nav-link">
-      {{ item.name }}
-    </a>
+    @for (item of navItems(); track item.id) {
+    <a href="#" class="nav-link">{{ item.name }}</a>
+    }
   </nav>
 </section>

@@ -1,6 +1,11 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { footerLinks, footerPhones } from '../../mock-data/footer-data';
-import { FooterLink } from '../shared/interfaces/footer-link.model';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  signal,
+} from '@angular/core';
+import { FooterDataService } from '../shared/services/footer-data.service';
+import { FooterLink } from '../shared/models/footer-link.model';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +16,14 @@ import { FooterLink } from '../shared/interfaces/footer-link.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-  readonly phones: string[] = footerPhones;
-  readonly links: FooterLink[] = footerLinks;
+  private readonly footerService = inject(FooterDataService);
+  readonly phones = signal<string[]>([]);
+  readonly links = signal<FooterLink[]>([]);
+
+  ngOnInit(): void {
+    this.footerService.getFooterData().subscribe((data) => {
+      this.phones.set(data.phones);
+      this.links.set(data.links);
+    });
+  }
 }

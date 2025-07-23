@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { Product } from '../product.model';
+import { Product } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 

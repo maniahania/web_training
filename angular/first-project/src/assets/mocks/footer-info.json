@@ -1,0 +1,9 @@
+{
+  "phones": ["+42 12 345 677", "+42 12 345 688"],
+  "links": [
+    { "label": "Help", "url": "#" },
+    { "label": "Find more help", "url": "#" },
+    { "label": "Contact us", "url": "#" },
+    { "label": "Returns", "url": "#" }
+  ]
+}

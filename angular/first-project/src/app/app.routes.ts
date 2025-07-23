@@ -8,7 +8,7 @@ export const routes: Routes = [
     path: 'products/:productId',
     loadComponent: () =>
       import(
-        './product-section/product-details/product-details.component'
+        './product-section/components/product-details/product-details.component'
       ).then((mod) => mod.ProductDetailsComponent),
   },
 ];

@@ -1,10 +1,10 @@
 <header class="header">
   <a href="#">
-    <img class="logo" src="logo.png" alt="website logo" />
+    <img class="logo" src="/assets/images/logo.png" alt="website logo" />
   </a>
 
   <select class="select-language">
-    @for (lang of languages; track lang.id) {
+    @for (lang of languages(); track lang.id) {
     <option [value]="lang.value">{{ lang.name }}</option>
     }
   </select>
