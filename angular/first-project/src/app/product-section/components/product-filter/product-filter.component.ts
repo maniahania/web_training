@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, output } from '@angular/core';
+import { ProductFilterPlaceholders } from '../../enums/product-filter.placeholders.enum';
 
 @Component({
   selector: 'app-product-filter',
@@ -11,6 +12,7 @@ import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 export class ProductFilterComponent {
   readonly minPriceChange = output<number>();
   readonly maxPriceChange = output<number>();
+  readonly placeholders = ProductFilterPlaceholders;
 
   onMinChange(event: Event) {
     const input = event.target as HTMLInputElement | null;
