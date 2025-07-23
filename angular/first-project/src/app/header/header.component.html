@@ -3,9 +3,13 @@
     <img class="logo" src="/assets/images/logo.png" alt="website logo" />
   </a>
 
+  @if (languages().length) {
   <select class="select-language">
     @for (lang of languages(); track lang.id) {
     <option [value]="lang.value">{{ lang.name }}</option>
     }
   </select>
+  } @else {
+  <app-empty-state message="No languages available."></app-empty-state>
+  }
 </header>
