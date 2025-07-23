@@ -1,0 +1,16 @@
+.not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.not-found h1 {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.not-found a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #3498db;
+  text-decoration: none;
+}

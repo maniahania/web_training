@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { ProductService } from '../../services/product.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Product } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
 import { switchMap } from 'rxjs';
@@ -15,7 +15,7 @@ import { switchMap } from 'rxjs';
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe, RouterLink],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

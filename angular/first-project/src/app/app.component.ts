@@ -16,6 +16,4 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  protected title = 'first-project';
-}
+export class AppComponent {}

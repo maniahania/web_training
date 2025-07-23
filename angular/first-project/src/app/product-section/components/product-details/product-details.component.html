@@ -3,9 +3,11 @@
   <h2 class="title">{{ product()?.name }}</h2>
   <p class="price">{{ product()?.price | currency }}</p>
   <p class="description">{{ product()?.description }}</p>
+  <a routerLink="/">Go to homepage</a>
 </section>
 } @else {
 <section class="not-found">
   <p class="not-found">Product not found.</p>
+  <a routerLink="/">Go to homepage</a>
 </section>
 }
