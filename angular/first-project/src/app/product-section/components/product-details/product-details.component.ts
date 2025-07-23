@@ -11,11 +11,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Product } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
 import { switchMap } from 'rxjs';
+import { NotFoundComponent } from '../../../shared/components/not-found/not-found.component';
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CurrencyPipe, RouterLink],
+  imports: [CurrencyPipe, RouterLink, NotFoundComponent],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

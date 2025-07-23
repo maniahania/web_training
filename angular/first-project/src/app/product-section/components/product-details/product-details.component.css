@@ -26,9 +26,7 @@
   margin-bottom: 2rem;
 }
 
-.not-found {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #c00;
-  margin: 4rem auto;
+a {
+  text-decoration: none;
+  color: #3498db;
 }

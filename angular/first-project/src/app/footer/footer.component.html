@@ -1,19 +1,29 @@
 <footer class="footer">
   <div class="footer-section">
     <h4 class="footer-heading">Customer service</h4>
-    @for (phone of phones(); track $index) {
-    <p class="footer-text">{{ phone }}</p>
+    @if (phones().length){
+    <ul class="footer-list">
+      @for (phone of phones(); track $index) {
+      <li class="footer-text">{{ phone }}</li>
+      }
+    </ul>
+    }@else {
+    <app-empty-state message="No contact numbers available."></app-empty-state>
     }
   </div>
 
   <div class="footer-section">
     <h4 class="footer-heading">Quick links</h4>
-    <ul class="footer-links">
+    @if (links().length) {
+    <ul class="footer-list">
       @for (link of links(); track $index) {
       <li>
         <a class="footer-link" [href]="link.url">{{ link.label }}</a>
       </li>
       }
     </ul>
+    } @else {
+    <app-empty-state message="No quick links available."></app-empty-state>
+    }
   </div>
 </footer>
