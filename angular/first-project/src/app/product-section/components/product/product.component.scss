@@ -1,15 +1,17 @@
+@use "colors";
+
 .product {
   border-radius: 8px;
   padding: 1rem;
   margin: 0.5rem;
-  background-color: #d8e8e9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: colors.$color-primary;
+  box-shadow: 0 2px 4px colors.$color-shadow;
   width: 25rem;
   height: 7rem;
   text-align: center;
   align-content: center;
 
   &:hover {
-    border: 2px solid #91b0b3ad;
+    border: 2px solid colors.$color-accent-light;
   }
 }

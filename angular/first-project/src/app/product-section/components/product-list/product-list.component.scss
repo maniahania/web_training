@@ -1,3 +1,5 @@
+@use "colors";
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +10,6 @@
 
   &__empty {
     font-weight: bold;
-    color: #666;
+    color: colors.$color-secondary;
   }
 }

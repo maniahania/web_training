@@ -1,10 +1,12 @@
+@use "colors";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
   height: 6rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px colors.$color-shadow;
 
   &__logo {
     height: 3rem;

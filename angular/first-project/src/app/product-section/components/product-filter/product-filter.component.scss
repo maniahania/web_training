@@ -1,10 +1,12 @@
+@use "colors";
+
 .filter {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  background-color: #d8e8e9;
+  background-color: colors.$color-accent-light;
   border-radius: 1rem;
   padding: 1.5rem;
 
@@ -23,7 +25,7 @@
     padding: 0.4rem;
     width: 100%;
     max-width: 10rem;
-    border: 1px solid #ccc;
+    border: 1px solid colors.$color-muted;
     border-radius: 4px;
   }
 }

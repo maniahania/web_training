@@ -1,4 +1,6 @@
+@use "colors";
+
 .empty-state {
   font-style: italic;
-  color: #888;
+  color: colors.$color-secondary;
 }

@@ -1,3 +1,5 @@
+@use "colors";
+
 .nav-panel {
   padding: 0 2rem;
 
@@ -23,7 +25,7 @@
 
     &:hover,
     &:active {
-      color: #4b6163f3;
+      color: colors.$color-accent-light;
       font-weight: 600;
     }
   }
