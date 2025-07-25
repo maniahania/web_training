@@ -1,0 +1,46 @@
+.footer {
+  padding: 2rem 4vw;
+  border-top: 1px solid #444;
+  background-color: #111;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  color: #fff;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #f3f3f3;
+  }
+
+  &__text {
+    color: #ccc;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    &,
+    &:visited {
+      color: #ccc;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.2rem 0;
+      transition: color 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: #91b0b3ad;
+    }
+  }
+}

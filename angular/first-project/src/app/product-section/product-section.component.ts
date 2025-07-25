@@ -7,7 +7,7 @@ import { CardComponent } from '../shared/components/card/card.component';
   selector: 'app-product-section',
   imports: [ProductListComponent, ProductFilterComponent, CardComponent],
   templateUrl: './product-section.component.html',
-  styleUrl: './product-section.component.css',
+  styleUrl: './product-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductSectionComponent {

@@ -13,7 +13,7 @@ import { EmptyStateComponent } from '../shared/components/empty-state/empty-stat
   imports: [EmptyStateComponent],
   standalone: true,
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css',
+  styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {

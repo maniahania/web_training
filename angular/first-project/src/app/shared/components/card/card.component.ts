@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-card',
   imports: [],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.css',
+  styleUrl: './card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent {}

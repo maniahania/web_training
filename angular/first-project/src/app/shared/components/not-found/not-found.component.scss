@@ -1,0 +1,22 @@
+.not-found {
+  text-align: center;
+  margin-top: 6rem;
+  text-align: center;
+  margin-top: 6rem;
+
+  &__title {
+    font-size: 2rem;
+    color: #e74c3c;
+  }
+
+  &__message {
+    margin-top: 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #3498db;
+    text-decoration: none;
+  }
+}

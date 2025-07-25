@@ -8,7 +8,7 @@ import { EmptyStateComponent } from '../shared/components/empty-state/empty-stat
   imports: [EmptyStateComponent],
   standalone: true,
   templateUrl: './nav-section.component.html',
-  styleUrl: './nav-section.component.css',
+  styleUrl: './nav-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavSectionComponent {

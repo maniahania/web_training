@@ -1,10 +1,10 @@
 <footer class="footer">
-  <div class="footer-section">
-    <h4 class="footer-heading">Customer service</h4>
+  <div class="footer__section">
+    <h4 class="footer__heading">Customer service</h4>
     @if (phones().length){
-    <ul class="footer-list">
+    <ul class="footer__list">
       @for (phone of phones(); track $index) {
-      <li class="footer-text">{{ phone }}</li>
+      <li class="footer__text">{{ phone }}</li>
       }
     </ul>
     }@else {
@@ -12,13 +12,13 @@
     }
   </div>
 
-  <div class="footer-section">
-    <h4 class="footer-heading">Quick links</h4>
+  <div class="footer__section">
+    <h4 class="footer__heading">Quick links</h4>
     @if (links().length) {
-    <ul class="footer-list">
+    <ul class="footer__list">
       @for (link of links(); track $index) {
       <li>
-        <a class="footer-link" [href]="link.url">{{ link.label }}</a>
+        <a class="footer__link" [href]="link.url">{{ link.label }}</a>
       </li>
       }
     </ul>

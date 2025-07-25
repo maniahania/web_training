@@ -8,7 +8,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [CurrencyPipe, RouterLink, RouterLinkActive],
   standalone: true,
   templateUrl: './product.component.html',
-  styleUrl: './product.component.css',
+  styleUrl: './product.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductComponent {

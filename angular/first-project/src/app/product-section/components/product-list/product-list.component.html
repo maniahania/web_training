@@ -1,9 +1,9 @@
-<ul>
+<ul class="product-list">
   @for (product of filteredProducts(); track product.id){
   <li>
     <app-product [product]="product" />
   </li>
   } @empty {
-  <li>No products available.</li>
+  <li class="product-list__empty">No products available.</li>
   }
 </ul>

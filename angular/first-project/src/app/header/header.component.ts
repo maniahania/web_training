@@ -8,7 +8,7 @@ import { EmptyStateComponent } from '../shared/components/empty-state/empty-stat
   imports: [EmptyStateComponent],
   standalone: true,
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {

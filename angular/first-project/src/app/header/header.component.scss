@@ -5,14 +5,14 @@
   padding: 0 4rem;
   height: 6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
 
-.logo {
-  height: 3rem;
-}
+  &__logo {
+    height: 3rem;
+  }
 
-.select-language {
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 9px;
+  &__language-select {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 9px;
+  }
 }

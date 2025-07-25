@@ -1,19 +1,21 @@
-<div class="filter-container">
-  <div>
-    <label for="min-price">Min. price ($)</label>
+<div class="filter">
+  <div class="filter__group">
+    <label for="min-price" class="filter__label">Min. price ($)</label>
     <input
       type="number"
       id="min-price"
+      class="filter__input"
       (input)="onMinChange($event)"
       [placeholder]="placeholders.MinPrice"
     />
   </div>
 
-  <div>
-    <label for="max-price">Max. price ($)</label>
+  <div class="filter__group">
+    <label for="max-price" class="filter__label">Max. price ($)</label>
     <input
       type="number"
       id="max-price"
+      class="filter__input"
       (input)="onMaxChange($event)"
       [placeholder]="placeholders.MaxPrice"
     />

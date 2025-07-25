@@ -6,7 +6,7 @@ import { ProductFilterPlaceholders } from '../../enums/product-filter.placeholde
   imports: [],
   standalone: true,
   templateUrl: './product-filter.component.html',
-  styleUrl: './product-filter.component.css',
+  styleUrl: './product-filter.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductFilterComponent {

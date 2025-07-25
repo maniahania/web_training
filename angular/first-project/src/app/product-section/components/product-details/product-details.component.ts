@@ -18,7 +18,7 @@ import { NotFoundComponent } from '../../../shared/components/not-found/not-foun
   standalone: true,
   imports: [CurrencyPipe, RouterLink, NotFoundComponent],
   templateUrl: './product-details.component.html',
-  styleUrl: './product-details.component.css',
+  styleUrl: './product-details.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductDetailsComponent implements OnInit {

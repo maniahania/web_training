@@ -1,8 +1,13 @@
-ul {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   padding: 0;
   justify-content: center;
+
+  &__empty {
+    font-weight: bold;
+    color: #666;
+  }
 }

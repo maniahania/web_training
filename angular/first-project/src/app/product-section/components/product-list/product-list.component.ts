@@ -14,7 +14,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
   imports: [ProductComponent],
   standalone: true,
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css',
+  styleUrl: './product-list.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductListComponent {
