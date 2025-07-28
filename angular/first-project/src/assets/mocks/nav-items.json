@@ -2,5 +2,5 @@
   { "id": "1", "name": "Filter", "href": "#filter" },
   { "id": "2", "name": "Header", "href": "#header" },
   { "id": "3", "name": "Footer", "href": "#footer" },
-  { "id": "5", "name": "Products", "href": "#product-list" }
+  { "id": "4", "name": "Products", "href": "#product-list" }
 ]
