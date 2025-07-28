@@ -2,7 +2,7 @@
   <h2 class="nav-panel__heading">This is just a small navigation panel</h2>
   <nav class="nav-panel__links">
     @if (navItems().length) { @for (item of navItems(); track item.id) {
-    <a href="#" class="nav-panel__link">{{ item.name }}</a>
+    <a [href]="item.href" class="nav-panel__link">{{ item.name }}</a>
     } } @else {
     <app-empty-state />
     }
