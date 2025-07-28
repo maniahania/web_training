@@ -3,7 +3,7 @@ import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FooterData } from '../models/footer-data.model';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class FooterDataService {
   private readonly httpClient = inject(HttpClient);
 

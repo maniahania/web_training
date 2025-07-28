@@ -10,6 +10,7 @@ import { EmptyStateComponent } from '../shared/components/empty-state/empty-stat
   templateUrl: './nav-section.component.html',
   styleUrl: './nav-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [NavDataService],
 })
 export class NavSectionComponent {
   private readonly navDataService = inject(NavDataService);

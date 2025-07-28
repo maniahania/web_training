@@ -15,6 +15,7 @@ import { EmptyStateComponent } from '../shared/components/empty-state/empty-stat
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [FooterDataService],
 })
 export class FooterComponent {
   private readonly footerService = inject(FooterDataService);
