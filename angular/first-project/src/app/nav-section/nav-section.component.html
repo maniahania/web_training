@@ -4,7 +4,7 @@
     @if (navItems().length) { @for (item of navItems(); track item.id) {
     <a href="#" class="nav-panel__link">{{ item.name }}</a>
     } } @else {
-    <app-empty-state message="Nowhere to go from here."></app-empty-state>
+    <app-empty-state />
     }
   </nav>
 </section>

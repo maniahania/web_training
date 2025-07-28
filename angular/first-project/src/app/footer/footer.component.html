@@ -8,7 +8,9 @@
       }
     </ul>
     }@else {
-    <app-empty-state message="No contact numbers available."></app-empty-state>
+    <app-empty-state>
+      <p ngProjectAs="message">No contact numbers available.</p>
+    </app-empty-state>
     }
   </div>
 
@@ -23,7 +25,9 @@
       }
     </ul>
     } @else {
-    <app-empty-state message="No quick links available."></app-empty-state>
+    <app-empty-state>
+      <p ngProjectAs="message">No quick links available.</p>
+    </app-empty-state>
     }
   </div>
 </footer>
